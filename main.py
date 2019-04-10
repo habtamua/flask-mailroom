@@ -6,7 +6,6 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from model import Donation, Donor
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY').encode()
 
 @app.route('/')
 def home():
